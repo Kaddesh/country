@@ -1,26 +1,22 @@
 import './App.scss';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './components/home';
 import About from './components/about';
-import  { CountryProvider, ThemeProvider } from './components/countryContext'
-
+import { CountryProvider, ThemeProvider } from './components/countryContext';
 
 function App() {
   return (
     <ThemeProvider>
-    <CountryProvider>
-      <Router>
-        <Routes>
-          
+      <CountryProvider>
+        <Router>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-           
-        </Routes>
-      </Router>
-    </CountryProvider>
+          </Routes>
+        </Router>
+      </CountryProvider>
     </ThemeProvider>
   );
 }
 
 export default App;
-
