@@ -1,0 +1,168 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+@import "./global.scss";
+
+
+.about {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100vh;
+}
+.details-container {
+    align-items: center;
+    padding: 50px 100px;
+
+    @include breakpoint-down(medium) {
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-bottom: 100px;
+    }
+}
+
+.buttonContainer {
+    display: flex;
+    align-items: center;
+    padding-bottom: 40px;
+    
+    .backButton {
+      display: flex;
+      border: none;
+      padding: 2px 8px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 2px 3px rgb(225, 219, 219);
+  
+      &:hover {
+        background-color: $Darklightmodinput;
+      }
+  
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 3px 5px #efe8e8;
+      }
+  
+      .backIcon {
+        font-size: 1.5em;
+        margin-right: 8px;
+      }
+    }
+  }
+
+.withborder {
+    display: flex;
+    flex-direction: column;
+
+    @include breakpoint-down(medium) {
+      display: block;
+    }
+}
+
+.country-items {
+    display: flex;
+    gap: 120px;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      gap: 10px;
+    }
+}
+
+.country-img {
+    width: 40%;
+
+    @include breakpoint-down(medium) {
+      width: 100%;
+    }
+}
+
+.country-flag {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.country-details {
+    display: flex;
+    gap: 90px;
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 2.5;
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+      gap: 0px;
+      font-size: 14px;
+    }
+}
+
+.country-details h2 {
+    font-weight: bold;
+    @include breakpoint-down(medium) {
+      font-size: 20px;
+    }
+}
+
+.country-details p span {
+    font-weight: 800;
+    color: $Darklightmodinput;
+}
+
+.classTLD {
+    margin-top: 60px;
+    line-height: 2.5;
+
+    @include breakpoint-down(medium) {
+      margin-top: 20px;
+    }
+}
+
+.borderCountry {
+    display: flex;
+    align-items: center;
+    
+    @include breakpoint-down(medium) {
+      display: block;
+      align-items: start;
+    }
+}
+
+.borderCountry h2 span{
+  font-size: 20px;
+  align-content: center;
+  
+    @include breakpoint-down(medium) {
+      font-size: 18px;
+      margin: 0px;
+    }
+  }
+
+.country-border {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 10px;
+    gap: 10px;
+   
+  }
+  
+  .country-border li {
+    align-content: center;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+
+    &.bgLight {
+      background-color:$darkBlue;
+      color: $LightGraylightboack;
+    }
+
+    &.bgDark {
+      background-color: $LightGraylightboack;
+      color: $darkBlue;
+    }
+  }

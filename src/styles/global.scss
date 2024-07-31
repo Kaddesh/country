@@ -1,0 +1,28 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    line-height: normal;
+    overflow-x: hidden;
+    letter-spacing: 0.05em; 
+  }
+
+  
+.home {
+  &.dark-theme {
+    background-color: $verydarkBluedarkmod; 
+    color: $CharsetWhitetext; 
+   
+  }
+
+  &.light-theme {
+    background-color: $LightGraylightboack; 
+    color: $Bluelightmode; 
+    
+  }
+}

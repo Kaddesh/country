@@ -1,0 +1,30 @@
+$darkBlue: hsl(209, 23%, 22%);
+$verydarkBluedarkmod:  hsl(207, 26%, 17%);
+$Bluelightmode: hsl(200, 15%, 8%);
+$Darklightmodinput: hsl(0, 0%, 52%);
+$LightGraylightboack: hsl(0, 0%, 98%);
+$CharsetWhitetext: hsl(0, 0%, 100%);
+
+// Font Sizes
+$font-sm: 0.875rem; // 14px
+$font-med: 1.125rem; // 18px
+$font-lg: 1.25rem;
+$font-xlg: 3.25rem;
+
+//Theme variables
+$themes: (
+  light: (
+    colorHeaderFooter: #fff,
+    colorText: #000,
+    colorBackground: #f8f8fa,
+  ),
+  dark: (
+    colorHeaderFooter: #36394c,
+    colorText: #eff2f7,
+    colorBackground: #222736,
+  ),
+);
+
+@function themed($key) {
+    @return map-get($theme-map, $key);
+}

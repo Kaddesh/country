@@ -1,0 +1,14 @@
+@import "./styles/variables.scss";
+@import "./styles/mixins.scss";
+@import "./styles/global.scss";
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.bg-container {
+    background-color:$LightGraylightboack;
+}
+
