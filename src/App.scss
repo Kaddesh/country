@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import "./styles/variables.scss";
 @import "./styles/mixins.scss";
 @import "./styles/global.scss";
@@ -6,9 +8,11 @@ html, body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: "Nunito sans", sans-serif;
 }
 
 .bg-container {
     background-color:$LightGraylightboack;
 }
+
 
